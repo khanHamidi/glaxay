@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(186, 121, 255);
+        }
+        
+        .son {
+            margin: 200px auto;
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        .parent-earth {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid rgb(197, 195, 195);
+            margin: -320px auto;
+            position: relative;
+            animation-name: galaxy;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        .earth {
+            background-color: gray;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 35px;
+        }
+        
+        .parent {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            border: 1px solid rgb(197, 195, 195);
+            margin: 60px auto;
+            position: relative;
+            animation-name: galaxy;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        .marikh {
+            background-color: orange;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 75px;
+        }
+        
+        @keyframes galaxy {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="son">
+
+        </div>
+        <div class="parent-earth">
+
+            <div class="earth"></div>
+        </div>
+        <div class="parent">
+            <div class="marikh"></div>
+        </div>
+    </div>
+</body>
+
+</html>
